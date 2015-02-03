@@ -90,9 +90,9 @@ except (ImportError, OSError):
 
 
 NAME = 'Pillow'
-PILLOW_VERSION = '2.7.0'
+PILLOW_VERSION = '2.7.0-atlprod'
 TCL_ROOT = None
-JPEG_ROOT = None
+JPEG_ROOT = ('/usr/lib64/', '/usr/include/')
 JPEG2K_ROOT = None
 ZLIB_ROOT = None
 TIFF_ROOT = None
@@ -754,6 +754,6 @@ setup(
     test_suite='PIL.tests',
     keywords=["Imaging", ],
     license='Standard PIL License',
-    zip_safe=True,
+    zip_safe=False,
 )
 # End of file
